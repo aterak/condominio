@@ -2,12 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.web.BANCOB2;
+package controller;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfWriter;
+import com.web.BANCOB2.ContratoRepository;
+import com.web.BANCOB2.PdfService;
+import repository.PessoaRepository;
 import jakarta.validation.Valid;
 import java.io.FileOutputStream;
 import java.io.IOException;

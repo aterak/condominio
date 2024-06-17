@@ -4,6 +4,7 @@
  */
 package com.web.BANCOB2;
 
+import repository.PessoaRepository;
 import com.lowagie.text.Document;
 import com.lowagie.text.Chunk;
 import com.lowagie.text.Document;
@@ -29,8 +30,7 @@ import model.Pessoa;
 @Service
 public class PdfService {
 
-  @Autowired
-  private PessoaRepository repo;
+  
 
   public Document getPdf() {
     //Pessoa pessoa = repo.findById(id).get();
