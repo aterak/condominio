@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <h1>Lista de Pessos Cadastradas</h1>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Acao</th>
+
+
+    </thead>
+    <tbody>
+        <tr scope="row" th:each="alunos : ${listapessoas}">
+            <td th:text="${alunos.id}"></td>
+            <td th:text="${alunos.nome}"></td>
+
+            <td th:text="${alunos.email}"></td>
+            <td>
+                <a class="btn btn-primary" th:href="@{detalhe(id=${alunos.id})}">
+                    <i class="bi bi-pencil-square"></i> Editar</a>
+                
+                <a class="btn btn-danger" th:href="@{remover(id=${alunos.id})}">
+                 <i class="bi bi-x-square"></i> Remover</a>
+        </tr>
+    </tbody>
+</table>
+<a th:href="@{/}" class="btn btn-outline-danger">index</a>
+</html>

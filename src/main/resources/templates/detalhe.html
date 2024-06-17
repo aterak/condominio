@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 20px;">
+
+            <h4>Formulário de edicao do inquilino</h4>
+            <hr>
+            <div class="container formEvento">
+
+                 <form action="/salvar" method="post">
+                     
+                     
+                     <!-- DADOS PESSOAIS-->
+                <fieldset>
+                    <table cellspacing="10">
+                    <legend>Dados Pessoais</legend>
+                     
+                     
+                     <label for="nome">ID:</label>
+         <input type="text" id="nome" name="id" th:value="${pessoa.id}">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" th:value="${pessoa.nome}">
+        
+        <tr>
+                            <td>
+                                <label for="pessoa.loft">Loft:</label>
+                            </td>
+                            <td align="left">
+                                <select  name="loft" th:value="${pessoa.loft}">
+                                    <option label="-" value="">-</option>
+                                    <option label="01" value="1">01</option>
+                                    <option label="02" value="2">02</option>
+                                    <option label="03" value="3">03</option>
+                                    <option label="04" value="4">04</option>
+                                    <option label="05" value="5">05</option>
+                                    <option label="06" value="6">06</option>
+                                    <option label="07" value="7">07</option>
+                                    <option label="08" value="8">08</option>
+                                    <option label="09" value="9">09</option>
+                                    <option label="10" value="10">10</option>
+                                    <option label="11" value="11">11</option>
+                                    <option label="12" value="12">12</option>
+                                    <option label="13" value="13">13</option>
+                                    <option label="14" value="14">14</option>
+                                    <option label="15" value="15">15</option>
+                                    <option label="16" value="16">16</option>
+                                    <option label="17" value="17">17</option>
+                                    <option label="18" value="18">18</option>
+                                </select>    
+                            </td>
+                            
+        </tr>
+        
+        <br>
+        
+        
+        
+        
+         <tr>
+                            <td>
+                                <label>Nascimento: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text"  name="cpf" th:value="${pessoa.cpf}"size="13" maxlength="13"> 
+                            </td>
+
+                            <td>
+                                <label for="rg">RG: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text"  name="identidade" th:value="${pessoa.identidade}"size="13" maxlength="13"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>CPF:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text"  name="cpf" th:value="${pessoa.cpf}" size="11" maxlength="11"> 
+                            </td>
+                            <td>
+                                <label for="sobrenome">Telefone: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text"  name="telefone" th:value="${pessoa.telefone}">
+                            </td>
+                        </tr>
+        
+        
+        
+        
+           </table>
+        
+        <button type="submit">Salvar</button>
+                 
+                </fieldset>
+    </form>
+            </div>
+        </div>
+
+    </body>
+
+</html>

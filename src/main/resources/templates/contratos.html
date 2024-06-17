@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> Contratos</div>
+        
+       
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <form action="/vercontrato" method="post">
+
+<!-- Escolh o contrato -->
+<fieldset>
+ <legend>Escolha o Tipo de Contrato</legend>
+ <table cellspacing="10">
+    <td>
+                                <label for="tipocontrato">Tipo de Contrato:</label>
+                            </td>
+                            <td align="left">
+                                <select name="textolongo"> 
+                                    <option label="-" value="">-</option>
+                                    <option value="sem">Sem Mobilia</option> 
+                                    <option value="mobiliado">Mobiliado</option> 
+                                    <option value="full">Full</option> 
+                                    <option value="parcial">Parcial</option> 
+
+                                </select>
+                            </td>
+     
+ </table>
+
+ 
+ <input type="submit" value="Visualizar">
+</fieldset>
+<br />
+
+
+
+    
+
+
+
+<input type="reset" value="Limpar">
+</form>
+                   <a th:href="@{/}" class="btn btn-outline-danger">Home</a>          
+                            
+                            
+                            
+       <div>::::::::::</div>
+<a th:href="@{/vercontratosemmobilia}" class="btn btn-outline-danger">Contrato sem mobilia</a>
+    <div>::::::::::</div>                     
+                            
+                            
+    </body>
+</html>
